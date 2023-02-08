@@ -14,6 +14,8 @@ except PackageNotFoundError:
 
 
 import intake
+import os
+here = os.path.abspath(os.path.dirname(__file__))
 
 
 # after installation, these will be available as e.g. intake.cat.cbofs, with its sources

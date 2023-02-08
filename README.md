@@ -1,16 +1,17 @@
 mc-goods
 ==============================
-[![Build Status](https://github.com/axiom-data-science/mc-goods/workflows/Tests/badge.svg)](https://github.com/axiom-data-science/mc-goods/actions)
-[![codecov](https://codecov.io/gh/axiom-data-science/mc-goods/branch/main/graph/badge.svg)](https://codecov.io/gh/axiom-data-science/mc-goods)
-[![License:MIT](https://img.shields.io/badge/License-MIT-lightgray.svg?style=flt-square)](https://opensource.org/licenses/MIT)[![pypi](https://img.shields.io/pypi/v/mc-goods.svg)](https://pypi.org/project/mc-goods)
-<!-- [![conda-forge](https://img.shields.io/conda/dn/conda-forge/mc-goods?label=conda-forge)](https://anaconda.org/conda-forge/mc-goods) -->[![Documentation Status](https://readthedocs.org/projects/mc-goods/badge/?version=latest)](https://mc-goods.readthedocs.io/en/latest/?badge=latest)
-
+[![License:MIT](https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
+[![Python Package Index](https://img.shields.io/pypi/v/mc-goods.svg?style=for-the-badge)](https://pypi.org/project/mc-goods)
 
 model_catalogs catalogs for GOODS
 
 --------
 
 <p><small>Project based on the <a target="_blank" href="https://github.com/jbusecke/cookiecutter-science-project">cookiecutter science project template</a>.</small></p>
+
+# How to Use
+
+Install [`model_catalogs`](https://github.com/NOAA-ORR-ERD/model_catalogs) and this package of catalogs will be installed too.
 
 
 # To add a catalog
