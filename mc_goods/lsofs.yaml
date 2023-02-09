@@ -10,40 +10,41 @@ metadata:
   filetype: 'fields'
 
 sources:
-  coops-forecast-agg:
-    driver: opendap
-    description: Aggregated 3D Lake Superior model in POM from 2022-10-23 to 2022-10-28.
-    args:
-      # chunks:
-      #   time: 1
-      engine: netcdf4
-      urlpath: https://opendap.co-ops.nos.noaa.gov/thredds/dodsC/LSOFS/fmrc/Aggregated_7_day_LSOFS_Fields_Forecast_best.ncd
-    metadata:
-      overall_start_datetime: '2022-10-23T13:00'
-      overall_end_datetime: '2022-10-28T18:00'
-      output_period_(hr): 1
-      axis:
-        T: time
-        X: nx
-        Y: ny
-        Z: sigma
-      standard_names:
-        eastward_sea_water_velocity: u
-        eastward_wind: air_u
-        northward_sea_water_velocity: v
-        northward_wind: air_v
-        ocean_sigma_coordinate: sigma
-        sea_floor_depth: depth
-        sea_surface_elevation: zeta
-        sea_water_temperature: temp
-        time: time
-        longitude: lon
-        latitude: lat
-      coords:
-        - time
-        - sigma
-        - lat
-        - lon
+  # this source is not available anymore 2023-02-08
+  # coops-forecast-agg:
+  #   driver: opendap
+  #   description: Aggregated 3D Lake Superior model in POM from 2022-10-23 to 2022-10-28.
+  #   args:
+  #     # chunks:
+  #     #   time: 1
+  #     engine: netcdf4
+  #     urlpath: https://opendap.co-ops.nos.noaa.gov/thredds/dodsC/LSOFS/fmrc/Aggregated_7_day_LSOFS_Fields_Forecast_best.ncd
+  #   metadata:
+  #     overall_start_datetime: '2022-10-23T13:00'
+  #     overall_end_datetime: '2022-10-28T18:00'
+  #     output_period_(hr): 1
+  #     axis:
+  #       T: time
+  #       X: nx
+  #       Y: ny
+  #       Z: sigma
+  #     standard_names:
+  #       eastward_sea_water_velocity: u
+  #       eastward_wind: air_u
+  #       northward_sea_water_velocity: v
+  #       northward_wind: air_v
+  #       ocean_sigma_coordinate: sigma
+  #       sea_floor_depth: depth
+  #       sea_surface_elevation: zeta
+  #       sea_water_temperature: temp
+  #       time: time
+  #       longitude: lon
+  #       latitude: lat
+  #     coords:
+  #       - time
+  #       - sigma
+  #       - lat
+  #       - lon
 
   # This source has been superseded by lsofs-fvcom.yaml:coops-forecast-noagg
   # coops-forecast-noagg:
