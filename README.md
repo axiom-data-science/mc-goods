@@ -2,6 +2,7 @@ mc-goods
 ==============================
 [![License:MIT](https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
 [![Python Package Index](https://img.shields.io/pypi/v/mc-goods.svg?style=for-the-badge)](https://pypi.org/project/mc-goods)
+[![Conda Version](https://img.shields.io/conda/vn/conda-forge/mc-goods.svg?style=for-the-badge)](https://anaconda.org/conda-forge/mc-goods)
 
 model_catalogs catalogs for GOODS
 

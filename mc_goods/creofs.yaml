@@ -53,6 +53,8 @@ sources:
       axis:
         T: time
         Z: nv
+        X: x
+        Y: y
       standard_names:
         eastward_sea_water_velocity: u
         eastward_wind: uwind_speed
