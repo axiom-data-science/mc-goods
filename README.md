@@ -14,6 +14,19 @@ model_catalogs catalogs for GOODS
 
 Install [`model_catalogs`](https://github.com/NOAA-ORR-ERD/model_catalogs) and this package of catalogs will be installed too.
 
+# Installation
+
+If you need to install these yourself, you can with PyPI:
+
+```
+pip install mc-goods
+```
+
+or with conda-forge:
+
+```
+conda install -c conda-forge mc-goods
+```
 
 # To add a catalog
 
