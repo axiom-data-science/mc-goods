@@ -15,6 +15,9 @@ except PackageNotFoundError:
 
 import intake
 import os
+import shutil
+import pathlib
+import model_catalogs as mc
 here = os.path.abspath(os.path.dirname(__file__))
 
 
@@ -59,3 +62,8 @@ tbofs = intake.open_catalog(os.path.join(here, 'tbofs.yaml'), ttl=None)
 wcofs_2ds = intake.open_catalog(os.path.join(here, 'wcofs-2ds.yaml'), ttl=None)
 wcofs_rgrid = intake.open_catalog(os.path.join(here, 'wcofs-rgrid.yaml'), ttl=None)
 wcofs = intake.open_catalog(os.path.join(here, 'wcofs.yaml'), ttl=None)
+
+
+# copy boundaries files to mc.CAT_PATH_BOUNDARIES
+there = pathlib.Path(os.path.abspath(os.path.dirname(__file__))) / "boundaries"
+[shutil.copy(bpath, mc.CAT_PATH_BOUNDARIES) for bpath in there.glob("*.yaml")]
